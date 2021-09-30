@@ -1,11 +1,10 @@
 name: Run
-schedule:
-    - cron: '0 23 * * *'
 
 on:
   workflow_dispatch:
   repository_dispatch:
-
+  schedule:
+    - cron: '0 23 * * *'
 jobs:
   build:
 
